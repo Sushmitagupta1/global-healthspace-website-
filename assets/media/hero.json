@@ -1,0 +1,17 @@
+{
+  "image": "",
+  "video": "",
+  "pages": {
+    "index.html": { "image": "assets/images/hero-home.jpg", "video": "" },
+    "about.html": { "image": "", "video": "" },
+    "services.html": { "image": "", "video": "" },
+    "approach.html": { "image": "", "video": "" },
+    "projects.html": { "image": "", "video": "" },
+    "team.html": { "image": "", "video": "" },
+    "contact.html": { "image": "", "video": "" },
+    "privacy.html": { "image": "", "video": "" },
+    "terms.html": { "image": "", "video": "" },
+    "disclaimer.html": { "image": "", "video": "" },
+    "404.html": { "image": "", "video": "" }
+  }
+}

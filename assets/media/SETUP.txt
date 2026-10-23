@@ -1,0 +1,37 @@
+HERO IMAGE / VIDEO FOR ANY PAGE
+=================================
+
+This folder + the file hero.json control the hero picture or video on every
+page of the site. No code or HTML needs to be touched.
+
+STEP 1 - Drop the file in
+  Pictures and videos  ->  assets/media/
+
+STEP 2 - Point the page at it in hero.json
+
+  {
+    "image": "",
+    "video": "",
+    "pages": {
+      "about.html": { "image": "assets/media/about-hero.jpg", "video": "" },
+      "projects.html": { "image": "", "video": "assets/media/projects-hero.mp4" }
+    }
+  }
+
+  "image"  path to a picture for that page  (leave blank for none)
+  "video"  path to an mp4 for that page   (leave blank for none)
+
+  - A page entry wins over the top level "image" / "video".
+  - Blank page entries fall back to the top level values.
+  - Use one or both. If a video is set it plays on top of the picture,
+    which acts as the poster frame.
+  - Keep the file name exactly as it is on disk, including the folder.
+
+STEP 3 - Save. The change appears on the website immediately.
+
+NOTES
+  - Landscape pictures work best (about 1600 x 1000 px, under 400 KB).
+  - Videos should be short, silent loops, under 8 MB.
+  - A picture or video is shown behind the page heading. The heading text
+    switches to light colours automatically so it stays readable.
+  - Delete a page entry to leave that page with the plain background.
