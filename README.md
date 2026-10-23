@@ -156,12 +156,13 @@ touching any HTML. Configure `assets/media/hero.json`:
 
 ### Enquiry form
 
-`contact.html` posts to Formspree.
+`contact.html` posts to Formspree form `mvkkoznk` (`https://formspree.io/f/mvkkoznk`).
+Submissions are delivered to the inbox verified on that Formspree account.
 
-1. Create the form at formspree.io.
-2. Replace `FORMSPREE_FORM_ID` in the form's `action` attribute with the real ID.
-3. Until that ID is present, the form validates and shows a "not connected yet" message
-   instead of sending.
+1. To change the destination, replace the form ID in the `action` attribute of
+   `contact.html`; no JavaScript change is needed.
+2. If the `action` still contains the `FORMSPREE_FORM_ID` placeholder, the form validates
+   and shows a "not connected yet" message instead of sending.
 
 The form includes a honeypot field, client-side validation with inline error states, a
 disabled submit state while sending, success and failure messages, and a consent checkbox.

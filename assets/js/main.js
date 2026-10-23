@@ -441,7 +441,7 @@
       var endpoint = (form.getAttribute("action") || "").trim();
       var localEndpoint = endpoint.indexOf("http://127.0.0.1") === 0 || endpoint.indexOf("http://localhost") === 0;
       var endpointReady =
-        endpoint.indexOf("FORMSPREE_FORM_ID") === -1 && endpoint.indexOf("mvkkoznk") === -1 &&
+        endpoint.indexOf("FORMSPREE_FORM_ID") === -1 &&
         endpoint.length > 8 &&
         (endpoint.indexOf("https://") === 0 || localEndpoint);
 
